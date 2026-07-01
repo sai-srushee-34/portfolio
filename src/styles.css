@@ -449,6 +449,16 @@ html {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    cursor: auto;
+  }
+
+  .custom-cursor,
+  .cursor-ring {
+    display: none;
+  }
+
   .floating-nav {
     top: 14px;
     padding: 8px 14px;
