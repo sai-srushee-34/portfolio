@@ -1994,6 +1994,38 @@ section {
   position: relative;
 }
 
+.footer-symbol {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: var(--color-primary);
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow:
+    0 0 10px rgba(0, 245, 255, 0.8),
+    0 0 20px rgba(0, 245, 255, 0.7),
+    0 0 40px rgba(123, 97, 255, 0.45);
+  animation: symbolGlow 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes symbolGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+    filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.6));
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+    filter: drop-shadow(0 0 18px rgba(0, 245, 255, 0.95));
+  }
+}
+
 .rotating-planet {
   width: 100%;
   height: 100%;

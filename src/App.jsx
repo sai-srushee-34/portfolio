@@ -418,14 +418,15 @@ const AboutSection = () => {
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'React', level: 'Expert', color: '#00F5FF' },
-    { name: 'JavaScript', level: 'Expert', color: '#7B61FF' },
-    { name: 'Node.js', level: 'Advanced', color: '#00F5FF' },
-    { name: 'MongoDB', level: 'Advanced', color: '#7B61FF' },
-    { name: 'Python', level: 'Advanced', color: '#FF2D95' },
-    { name: 'TypeScript', level: 'Expert', color: '#00F5FF' },
-    { name: 'Three.js', level: 'Advanced', color: '#7B61FF' },
-    { name: 'SQL', level: 'Advanced', color: '#FF2D95' },
+    { name: 'Machine Learning', level: 'Beginner', color: '#0478d6' },
+    { name: 'React', level: 'intermediate', color: '#00F5FF' },
+    { name: 'JavaScript', level: 'intermediate', color: '#00F5FF' },
+    { name: 'Node.js', level: 'intermediate', color: '#00F5FF' },
+    { name: 'MongoDB', level: 'intermediate', color: '#00F5FF' },
+    { name: 'C++', level: 'Advanced', color: '#FF2D95' },
+    { name: 'Git', level: 'Advanced', color: '#FF2D95' },
+    { name: 'Data Analysis', level: 'Advanced', color: '#FF2D95' },
+    { name: 'SQL', level: 'Advanced', color: '#FF2D95' }
   ];
 
   return (
@@ -511,33 +512,33 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Neural Dashboard',
-      description: 'Real-time data visualization platform with AI insights',
-      tech: ['React', 'Three.js', 'Python', 'TensorFlow'],
-      image: '🎨',
+      title: 'Real Time Stock Price Tracker',
+      description: 'Real-time data visualization platform',
+      tech: ['React + vite', 'yfinance + pandas', 'FastAPI+Uvicorn', 'Charts.js','Axios'],
+      image: '📈',
       github: '#',
       demo: '#',
-      stats: { users: '5K+', uptime: '99.9%' },
+      stats: { Stocks: '5+',Features:'Live Updates'},
     },
     {
       id: 2,
-      title: 'Quantum Chat',
-      description: 'Encrypted messaging platform with quantum-resistant algorithms',
-      tech: ['Node.js', 'WebSocket', 'Cryptography', 'React'],
-      image: '💬',
+      title: '',
+      description: '',
+      tech: [],
+      image: '⌛',
       github: '#',
       demo: '#',
-      stats: { messages: '1M+', users: '10K+' },
+      stats: { },
     },
     {
       id: 3,
-      title: 'Aurora Store',
-      description: 'E-commerce platform with immersive 3D product visualization',
-      tech: ['Next.js', 'Three.js', 'PostgreSQL', 'Stripe'],
-      image: '🛍️',
+      title: '',
+      description: '',
+      tech: [],
+      image: '⌛',
       github: '#',
       demo: '#',
-      stats: { sales: '$500K+', conversion: '3.5%' },
+      stats: {  },
     },
   ];
 
@@ -668,13 +669,13 @@ const ProjectModal = ({ project, onClose }) => {
 
 const TimelineSection = () => {
   const events = [
-    { year: '2019', title: 'Started Learning Web Development', icon: '🎓' },
-    { year: '2020', title: 'First Full Stack Project', icon: '🚀' },
-    { year: '2021', title: 'Open Source Contributions', icon: '🌟' },
-    { year: '2022', title: 'Founded Web Dev Community', icon: '👥' },
-    { year: '2023', title: 'Expert in React & 3D Web', icon: '🏆' },
-    { year: '2024', title: 'Leading Innovation', icon: '💡' },
-  ];
+  { year: "2024", title: "Started B.Tech in AI & ML", icon: "🎓" },
+  { year: "2024", title: "Began Learning Programming", icon: "💻" },
+  { year: "2025", title: "Started Full-Stack Development", icon: "🌐" },
+  { year: "2026", title: "Built Real-Time Stock Price Tracker", icon: "📈" },
+  { year: "2026", title: "Developing Advanced Portfolio & AI Projects", icon: "🤖" },
+  { year: "Future", title: "AI&ML engineer", icon: "🚀" },
+];
 
   return (
     <section id="timeline" className="timeline-section">
@@ -736,25 +737,37 @@ const TimelineEvent = ({ event, index }) => {
 
 const ExperienceSection = () => {
   const experience = [
-    {
-      title: 'Senior Frontend Developer',
-      company: 'Tech Corp',
-      period: '2023 - Present',
-      highlights: ['5+ projects', 'Team lead'],
-    },
-    {
-      title: 'Full Stack Developer',
-      company: 'StartUp Inc',
-      period: '2021 - 2023',
-      highlights: ['MVP launch', '3M users'],
-    },
-    {
-      title: 'Junior Developer',
-      company: 'Web Agency',
-      period: '2019 - 2021',
-      highlights: ['50+ sites', 'Client focused'],
-    },
-  ];
+  {
+    title: 'Full-Stack Development',
+    company: 'Personal Projects',
+    period: '2025',
+    highlights: [
+      'Built responsive web applications',
+      'Developed REST APIs using FastAPI',
+      'Integrated React with backend services',
+    ],
+  },
+  {
+    title: 'Real-Time Stock Price Tracker',
+    company: 'Academic Project',
+    period: '2026',
+    highlights: [
+      'Tracked live prices for 5+ major stocks',
+      'Visualized historical trends with Chart.js',
+      'Used yfinance, Pandas & FastAPI',
+    ],
+  },
+  {
+    title: 'Data Structures & Algorithms',
+    company: 'Competitive Programming',
+    period: '2025 - Present',
+    highlights: [
+      'Solved coding challenges',
+      'Strengthened problem-solving skills',
+      'Practiced core CS concepts',
+    ],
+  },
+];
 
   return (
     <section id="experience" className="experience-section">
@@ -842,9 +855,9 @@ const AchievementBadge = ({ achievement }) => {
 
 const CertificationsSection = () => {
   const certifications = [
-    { title: 'AWS Certified Developer', issuer: 'Amazon', date: '2023' },
-    { title: 'React Advanced Patterns', issuer: 'Egghead', date: '2022' },
-    { title: 'Full Stack Mastery', issuer: 'Udemy', date: '2021' },
+    { title: 'Top 100 Coder', issuer: 'VNRVJIET', date: '2025' },
+    { title: '', issuer: '', date: '' },
+    { title: '', issuer: '', date: '' },
   ];
 
   return (
@@ -1014,10 +1027,10 @@ const ContactSection = () => {
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'GitHub', url: '#' },
-    { name: 'LinkedIn', url: '#' },
-    { name: 'Twitter', url: '#' },
-    { name: 'Email', url: 'mailto:hello@example.com' },
+    { name: 'GitHub', url: 'https://github.com/sai-srushee-34' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/eppakayala-rakshith-sai-srusheel-7a2631298/' },
+    { name: 'Twitter', url: 'https://x.com/RakshithSa20867' },
+    { name: 'Smart Interviews', url: 'https://smartinterviews.in/profile/Srusheel_34' },
   ];
 
   return (
@@ -1025,11 +1038,12 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-planet">
           <div className="rotating-planet" />
+          <span className="footer-symbol" aria-hidden="true">&lt;/&gt;</span>
         </div>
 
         <div className="footer-text">
-          <h3>Let's Create Something Amazing</h3>
-          <p>© 2024 Your Name. All rights reserved.</p>
+          <h3>Thanks for Visiting My Portfolio</h3>
+          <p>© 2026 Eppakayala Rakshith Sai Srusheel. All rights reserved.</p>
         </div>
 
         <div className="social-links">
