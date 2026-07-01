@@ -1,0 +1,37 @@
+{
+  "name": "cinematic-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A premium, Awwwards-worthy cinematic futuristic portfolio website",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "autoprefixer": "^10.4.14",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
+    "lenis": "^1.0.33",
+    "postcss": "^8.4.27",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "split-type": "^0.3.4",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^3.0.0",
+    "vite": "^4.4.5"
+  }
+}
